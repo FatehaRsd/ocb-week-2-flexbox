@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Welcome to Big Bookshelf | Home</title>
+
+    <link rel="stylesheet" href="bookregister.css" />
+    <script
+      src="https://kit.fontawesome.com/f96b9ceb2c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header">
+      <a href="index.html"
+        ><img src="image/logo-1.png" class="logo" alt="logo"
+      /></a>
+    </section>
+
+    <section class="form-container">
+      <h1>register your book</h1>
+      <div class="frame">
+        <form action="bookregister.html" method="get" class="book-details">
+          <p>Book Details</p>
+          <div class="book-details">
+            <div class="title">
+              <label for="title">Title </label>
+              <div class="input-container">
+                <input
+                  type="text"
+                  name="name"
+                  id="title"
+                  placeholder="Your book title here. Harry Potter and The Fantastic Bootcamp"
+                />
+              </div>
+            </div>
+            <div class="genre">
+              <label for="genre">Genre </label>
+              <div class="input-container">
+                <input type="text" name="name" id="genre" required />
+              </div>
+            </div>
+            <div class="author">
+              <label for="author">Author </label>
+              <input
+                class="right-align"
+                type="text"
+                name="name"
+                id="author"
+                required
+              />
+            </div>
+            <div class="publisher">
+              <label for="publisher">Publisher </label>
+              <input type="text" name="name" id="publisher" required />
+            </div>
+            <div class="year-publish">
+              <label for="publish">Year Published </label>
+              <input type="number" name="name" id="year-publish" required />
+            </div>
+            <div class="availability">
+              <label for="availability">Availability </label>
+              <input type="radio" name="radio" value="online" id="radio" />
+              Online
+              <input type="radio" name="radio" value="online" id="radio" /> In
+              Store
+              <input type="radio" name="radio" value="online" id="radio" />
+              Online & In store
+            </div>
+            <div class="pages">
+              <label for="pages">Pages </label>
+              <input type="number" name="name" id="pages" required />
+            </div>
+            <div class="language">
+              <label for="language">Language </label>
+              <input type="text" name="name" id="language" required />
+            </div>
+          </div>
+        </form>
+        <form action="bookregister.html" method="get" class="register-details">
+          <p>Registree Details</p>
+          <div class="register-details">
+            <div class="name">
+              <label for="name">Name </label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="email">
+              <label for="email">Email </label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="concern">
+              <input type="checkbox" id="concern" name="concern" value="Bike" />
+              <label for="concern" class="concern-text">
+                <p>
+                  I hereby agree to follow all rules and confirmed that all
+                  details are accurate
+                </p></label
+              >
+            </div>
+          </div>
+        </form>
+
+        <button
+          type="button"
+          onclick="alert('Congratulation! Your registration successfully submitted.')"
+        >
+          SAVE YOUR BOOK
+        </button>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="top-footer">
+        <img src="image/logo-1.png" class="logo-footer" alt="logo" />
+        <ul class="social-icon">
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+        </ul>
+      </div>
+      <div class="bottom-footer">
+        <div class="left-footer">
+          <p>Terms and conditions</p>
+          <p>Privacy policy</p>
+        </div>
+        <div class="right-footer">
+          <p>+44 1332 412251</p>
+          <p>support@bbookshelf.com</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
